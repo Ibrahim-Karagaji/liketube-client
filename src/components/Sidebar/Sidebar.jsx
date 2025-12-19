@@ -68,7 +68,7 @@ export default function Sidebar() {
                 themes.fcolor.bgHover
               )}
             >
-              <img src="public/subscriptions.svg" className="w-[18px] md:w-5" />
+              <img src="images/subscriptions.svg" className="w-[18px] md:w-5" />
               <p className="text-[10px]">
                 {settings.settingsState.language === "English"
                   ? "Subscription"
