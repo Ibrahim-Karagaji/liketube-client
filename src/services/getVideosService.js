@@ -1,7 +1,7 @@
 export default async function getVideos(videosCount, catagory) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos/${videosCount}/${catagory}`,
+      `https://liketube-server.vercel.app/users/videos/${videosCount}/${catagory}`,
       { method: "GET" }
     );
 

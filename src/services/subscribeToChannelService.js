@@ -1,7 +1,7 @@
 export default async function subscribeToChannel(channelid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/subscrips/${channelid}`,
+      `https://liketube-server.vercel.app/users/subscrips/${channelid}`,
       {
         method: "POST",
         headers: { token: `Beare ${localStorage.getItem("token")}` },

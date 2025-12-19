@@ -1,9 +1,12 @@
 export default async function deleteChannel(channelid) {
   try {
-    const response = await fetch("liketube-server.vercel.app/users/channel", {
-      method: "DELETE",
-      headers: { token: `Beare ${localStorage.getItem("token")}` },
-    });
+    const response = await fetch(
+      "https://liketube-server.vercel.app/users/channel",
+      {
+        method: "DELETE",
+        headers: { token: `Beare ${localStorage.getItem("token")}` },
+      }
+    );
 
     const data = await response.json();
 

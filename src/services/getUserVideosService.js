@@ -2,7 +2,7 @@ export default async function getUserVideos(sortOrder) {
   try {
     const query = `?type=${sortOrder.type}&order=${sortOrder.order}`;
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos${query}`,
+      `https://liketube-server.vercel.app/users/videos${query}`,
       {
         method: "GET",
         headers: {

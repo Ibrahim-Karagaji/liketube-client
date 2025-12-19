@@ -1,7 +1,7 @@
 export default async function getUserVideos(channelid, videoid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos/${channelid}/${videoid}`,
+      `https://liketube-server.vercel.app/users/videos/${channelid}/${videoid}`,
       {
         method: "DELETE",
         headers: {

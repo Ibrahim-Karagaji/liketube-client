@@ -1,7 +1,7 @@
 export default async function addComment(comment, videoid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/comments/${videoid}`,
+      `https://liketube-server.vercel.app/users/comments/${videoid}`,
       {
         method: "POST",
         headers: {

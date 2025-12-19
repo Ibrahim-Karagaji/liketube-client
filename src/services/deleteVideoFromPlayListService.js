@@ -1,7 +1,7 @@
 export default async function deleteVideoFromPlayList(videoid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/play-list/${videoid}`,
+      `https://liketube-server.vercel.app/users/play-list/${videoid}`,
       {
         method: "DELETE",
         headers: {

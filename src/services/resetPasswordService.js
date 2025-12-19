@@ -1,7 +1,7 @@
 export default async function resetPassword(password) {
   try {
     const response = await fetch(
-      "liketube-server.vercel.app/users/reset-password",
+      "https://liketube-server.vercel.app/users/reset-password",
       {
         body: JSON.stringify({
           newPassword: password,

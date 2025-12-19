@@ -1,7 +1,7 @@
 export default async function incrementVideoViews(videoid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos/${videoid}/view`,
+      `https://liketube-server.vercel.app/users/videos/${videoid}/view`,
       {
         method: "PATCH",
         headers: { token: `Beare ${localStorage.getItem("token")}` },

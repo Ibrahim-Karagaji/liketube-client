@@ -1,7 +1,7 @@
 export default async function deleteVideoFromWatchHistoryService(videoid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/watch-history/${videoid}`,
+      `https://liketube-server.vercel.app/users/watch-history/${videoid}`,
       {
         method: "DELETE",
         headers: { token: `Bearer ${localStorage.getItem("token")}` },

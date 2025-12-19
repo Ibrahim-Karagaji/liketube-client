@@ -1,7 +1,7 @@
 export default async function verifyResetCode(code) {
   try {
     const response = await fetch(
-      "liketube-server.vercel.app/users/verify-reset-code",
+      "https://liketube-server.vercel.app/users/verify-reset-code",
       {
         body: JSON.stringify({
           code: code,

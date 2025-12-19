@@ -1,7 +1,7 @@
 export default async function likedVideos() {
   try {
     const response = await fetch(
-      "liketube-server.vercel.app/users/liked-videos",
+      "https://liketube-server.vercel.app/users/liked-videos",
       {
         method: "GET",
         headers: {

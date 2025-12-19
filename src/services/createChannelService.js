@@ -7,13 +7,16 @@ export default async function resetPassword(channelInfo) {
   formData.append("description", channelInfo.description);
 
   try {
-    const response = await fetch("liketube-server.vercel.app/users/channel", {
-      body: formData,
-      method: "POST",
-      headers: {
-        token: `beare ${localStorage.getItem("token")}`,
-      },
-    });
+    const response = await fetch(
+      "https://liketube-server.vercel.app/users/channel",
+      {
+        body: formData,
+        method: "POST",
+        headers: {
+          token: `beare ${localStorage.getItem("token")}`,
+        },
+      }
+    );
 
     const result = await response.json();
 

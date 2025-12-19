@@ -1,7 +1,7 @@
 export default async function getWatchHistroyVideos() {
   try {
     const response = await fetch(
-      "liketube-server.vercel.app/users/watch-history",
+      "https://liketube-server.vercel.app/users/watch-history",
       {
         method: "GET",
         headers: { token: `Bearer ${localStorage.getItem("token")}` },

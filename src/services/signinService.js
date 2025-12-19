@@ -1,13 +1,16 @@
 export default async function signin(email, password) {
   try {
-    const response = await fetch("liketube-server.vercel.app/users/login", {
-      body: JSON.stringify({
-        email: email,
-        password: password,
-      }),
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-    });
+    const response = await fetch(
+      "https://liketube-server.vercel.app/users/login",
+      {
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
 
     const data = await response.json();
 

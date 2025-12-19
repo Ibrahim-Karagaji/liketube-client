@@ -1,7 +1,7 @@
 export default async function getSocialMediaInfo(channelid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/social-media/${channelid}`,
+      `https://liketube-server.vercel.app/users/social-media/${channelid}`,
       {
         method: "GET",
         headers: { token: `Beare ${localStorage.getItem("token")}` },

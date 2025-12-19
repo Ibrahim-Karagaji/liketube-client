@@ -8,7 +8,7 @@ export default async function uploadVideo(video, channelid) {
 
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos/${channelid}`,
+      `https://liketube-server.vercel.app/users/videos/${channelid}`,
       {
         method: "POST",
         body: formData,

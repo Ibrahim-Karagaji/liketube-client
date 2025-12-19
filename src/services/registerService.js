@@ -8,10 +8,13 @@ export default async function register(userinfo) {
   formdata.append("user_name", userinfo.user_name);
 
   try {
-    const response = await fetch("liketube-server.vercel.app/users/register", {
-      body: formdata,
-      method: "POST",
-    });
+    const response = await fetch(
+      "https://liketube-server.vercel.app/users/register",
+      {
+        body: formdata,
+        method: "POST",
+      }
+    );
 
     const result = await response.json();
 

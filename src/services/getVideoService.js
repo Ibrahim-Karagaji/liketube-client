@@ -1,7 +1,7 @@
 export default async function getVideoService(videoid) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videosid/${videoid}`,
+      `https://liketube-server.vercel.app/users/videosid/${videoid}`,
       {
         method: "GET",
       }

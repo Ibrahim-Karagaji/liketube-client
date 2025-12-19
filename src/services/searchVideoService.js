@@ -1,7 +1,7 @@
 export default async function searchVideo(videosCount, search) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos-search/${videosCount}?search=${search}`,
+      `https://liketube-server.vercel.app/users/videos-search/${videosCount}?search=${search}`,
       { method: "GET" }
     );
 

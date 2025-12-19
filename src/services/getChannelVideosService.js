@@ -1,7 +1,7 @@
 export default async function getChannelVideos(channelid, limilt) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/videos/channel/${channelid}/${limilt}`,
+      `https://liketube-server.vercel.app/users/videos/channel/${channelid}/${limilt}`,
       { method: "GET" }
     );
 

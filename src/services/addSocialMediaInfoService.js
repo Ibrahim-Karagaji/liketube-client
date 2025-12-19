@@ -1,7 +1,7 @@
 export default async function addSocialMediaInfo(channelId, socialMedia) {
   try {
     const response = await fetch(
-      `liketube-server.vercel.app/users/social-media/${channelId}`,
+      `https://liketube-server.vercel.app/users/social-media/${channelId}`,
       {
         method: "POST",
         headers: {
