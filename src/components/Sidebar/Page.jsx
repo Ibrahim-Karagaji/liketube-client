@@ -30,7 +30,7 @@ export default function Page() {
                 themes.fcolor.bgHover
               )}
             >
-              <img src="public/subscriptions.svg" className="w-[18px]" />
+              <img src="images/subscriptions.svg" className="w-[18px]" />
               <p className="text-[13px]">Subscription</p>
             </button>
           </Link>
@@ -56,7 +56,7 @@ export default function Page() {
               )}
             >
               <p className="text-[13px]">الاشتراكات</p>
-              <img src="public/subscriptions.svg" className="w-[18px]" />
+              <img src="images/subscriptions.svg" className="w-[18px]" />
             </button>
           </Link>
         </>

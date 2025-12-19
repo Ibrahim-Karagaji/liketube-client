@@ -116,7 +116,7 @@ export default function Feedbac() {
           </button>
         </div>
         <img
-          src="public/logo.png"
+          src="images/logo.png"
           alt="logo"
           className="md:w-36 w-28 md:h-36 h-28 m-auto"
         />

@@ -30,7 +30,7 @@ export default function Sidebar() {
           )}
         >
           <div className="flex items-center">
-            <img src="public/logo.png" alt="" className={clsx("w-10 h-10")} />
+            <img src="images/logo.png" alt="" className={clsx("w-10 h-10")} />
             <p className="font-bold">LikeTube</p>
           </div>
         </div>

@@ -195,7 +195,7 @@ export default function ResetPassword() {
             AR
           </button>
         </div>
-        <img src="public/logo.png" className="w-15 h-15 m-auto" />
+        <img src="images/logo.png" className="w-15 h-15 m-auto" />
         <h1 className="text-[19px] font-medium text-center">
           {settngs.settingsState.language === "English"
             ? "Reset Password"
